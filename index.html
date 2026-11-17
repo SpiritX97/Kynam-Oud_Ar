@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a0a0a">
+  <meta name="description" content="اكتشفوا أجود أنواع خشب العود السعودي الطبيعي لدى كنايم عود.">
+  <title>كنايم عود | عود سعودي فاخر</title>
+
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <style>
+    :root {
+      color-scheme: dark;
+      --background: #0a0a0a;
+      --surface: #151515;
+      --gold: #d4af37;
+      --gold-light: #efd77d;
+      --text: #f7f4ed;
+      --muted: #c3beb2;
+      --border: rgba(212, 175, 55, 0.45);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; scroll-padding-top: 85px; }
+    body { background: var(--background); color: var(--text); font-family: "Segoe UI", Tahoma, Arial, sans-serif; line-height: 1.7; }
+    a { color: inherit; }
+
+    .site-header {
+      position: absolute; inset: 0 0 auto; z-index: 2; display: flex;
+      align-items: center; justify-content: space-between; gap: 24px; padding: 22px 8%;
+      direction: ltr;
+    }
+    .brand { color: var(--gold); font-size: 1.05rem; font-weight: 700; letter-spacing: .08em; text-decoration: none; text-transform: uppercase; }
+    .nav-links { display: flex; gap: 30px; list-style: none; }
+    .nav-links a { color: var(--text); font-size: .92rem; text-decoration: none; transition: color .2s ease; }
+    .nav-links a:hover, .nav-links a:focus-visible { color: var(--gold-light); }
+
+    .hero {
+      position: relative; display: grid; place-items: center;
+      min-height: 100svh; padding: 110px 24px 40px;
+      background: #060606;
+      overflow: hidden;
+    }
+    .hero-logo-wrap {
+      display: flex; align-items: center; justify-content: center;
+      width: min(100%, 1200px); height: min(80vh, 900px);
+      padding: 24px;
+    }
+    .hero-logo {
+      display: block; width: 100%; height: 100%; object-fit: contain;
+      filter: drop-shadow(0 8px 32px rgba(212,175,55,0.25));
+      animation: rise-in .8s ease-out both;
+    }
+
+    .section { padding: 88px 8%; }
+    .section-title { margin-bottom: 16px; color: var(--gold); font-family: Georgia, "Times New Roman", serif; font-size: clamp(2rem, 4vw, 2.8rem); line-height: 1.35; text-align: center; }
+    .section-intro { max-width: 760px; margin: 0 auto 42px; color: var(--muted); text-align: center; }
+    .about-copy { max-width: 850px; margin: 0 auto; color: var(--muted); font-size: 1.08rem; text-align: center; }
+    .products { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 26px; }
+    .card { overflow: hidden; border: 1px solid var(--border); border-radius: 14px; background: var(--surface); transition: transform .25s ease, border-color .25s ease; }
+    .card:hover { transform: translateY(-7px); border-color: var(--gold); }
+    .card img { display: block; width: 100%; height: 290px; object-fit: cover; }
+    .card-content { padding: 23px; }
+    .card h3 { margin-bottom: 9px; color: var(--gold-light); font-family: Georgia, "Times New Roman", serif; font-size: 1.35rem; }
+    .card p, .feature p { color: var(--muted); }
+    .features { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
+    .feature { padding: 27px 22px; border: 1px solid rgba(255,255,255,.08); border-radius: 12px; background: var(--surface); text-align: center; }
+    .feature-icon { display: block; margin-bottom: 12px; color: var(--gold); font-size: 1.8rem; }
+    .feature h3 { margin-bottom: 8px; color: var(--gold-light); font-size: 1.05rem; }
+    .contact { border-top: 1px solid rgba(212,175,55,.15); text-align: center; }
+    .contact-details { display: grid; gap: 10px; color: var(--muted); }
+    .contact-details a { color: var(--gold-light); text-decoration: none; }
+    .contact-details a:hover, .contact-details a:focus-visible { text-decoration: underline; }
+    .contact-details a[ dir="ltr"] { unicode-bidi: isolate; }
+    .site-footer { padding: 22px 8%; border-top: 1px solid var(--border); background: #050505; color: var(--muted); font-size: .9rem; text-align: center; }
+
+    @keyframes rise-in { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+    @media (max-width: 900px) { .products { grid-template-columns: repeat(2, minmax(0, 1fr)); } .features { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media (max-width: 600px) {
+      .site-header { align-items: flex-start; flex-direction: column; padding: 18px 6%; }
+      .nav-links { flex-wrap: wrap; gap: 8px 18px; }
+      .nav-links a { font-size: .85rem; }
+      .section { padding: 68px 6%; }
+      .products, .features { grid-template-columns: 1fr; }
+      .card img { height: 250px; }
+      .hero { padding-top: 110px; }
+      .hero-logo-wrap { height: min(65vh, 560px); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header and logo presentation intentionally retained from the English site. -->
+  <header class="site-header">
+    <a class="brand" href="#home">Kynam Oud</a>
+    <nav aria-label="Main navigation">
+      <ul class="nav-links">
+        <li><a href="#about">Our Story</a></li>
+        <li><a href="#products">Collection</a></li>
+        <li><a href="#why-us">Why Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" id="home" aria-label="Kynam Oud brand logo">
+      <div class="hero-logo-wrap">
+        <img class="hero-logo" src="https://raw.githubusercontent.com/SpiritX97/Kynam-Oud_Eng/main/Logo.jpg" alt="Kynam Oud logo" loading="eager">
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title" dir="rtl">
+      <h2 class="section-title" id="about-title">قصتنا</h2>
+      <p class="about-copy">تحتفي كنايم عود بالتراث العريق للعود الطبيعي. نختار أجود أنواع خشب العود بعناية فائقة لما يتميز به من طابع فريد وجودة استثنائية ورائحة آسرة تترك أثرًا لا يُنسى.</p>
+    </section>
+
+    <section class="section" id="products" aria-labelledby="products-title" dir="rtl">
+      <h2 class="section-title" id="products-title">مختارات من مجموعتنا</h2>
+      <p class="section-intro">اكتشفوا خشب العود المختار بعناية، المعروف بجودته وطابعه المميز ورائحته الطبيعية الغنية.</p>
+      <div class="products">
+        <article class="card">
+          <img src="https://raw.githubusercontent.com/SpiritX97/Kynam-Oud_Eng/main/Example%20of%20Triple%20Super.jpg" alt="قطع من خشب العود الفاخر" loading="lazy">
+          <div class="card-content"><h3>عود سوبر</h3><p>خشب عود طبيعي استثنائي بطابع غني وعميق ورائحة آسرة.</p></div>
+        </article>
+        <article class="card">
+          <img src="https://raw.githubusercontent.com/SpiritX97/Kynam-Oud_Eng/main/Example%20of%20Double%20super%20.jpg" alt="عرض فاخر لخشب العود من كنايم عود" loading="lazy">
+          <div class="card-content"><h3>عود فاخر</h3><p>خشب عود فاخر اختير بعناية لما يتميز به من عروق فريدة ورائحة نفيسة.</p></div>
+        </article>
+        <article class="card">
+          <img src="https://raw.githubusercontent.com/SpiritX97/Kynam-Oud_Eng/main/Arabic%20describtion%20with%20bakoor.jpg" alt="عرض لخشب العود والبخور عالي الجودة" loading="lazy">
+          <div class="card-content"><h3>أفضل أنواع العود</h3><p>عود طبيعي عالي الجودة، اختير ليمنحكم تجربة أصيلة لا تُنسى.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="why-us" aria-labelledby="why-us-title" dir="rtl">
+      <h2 class="section-title" id="why-us-title">ما يميز كنايم عود</h2>
+      <p class="section-intro">تجربة متكاملة تبدأ باختيار العود بعناية وتنتهي بتقديمه بأجمل صورة.</p>
+      <div class="features">
+        <article class="feature"><span class="feature-icon" aria-hidden="true">✦</span><h3>عود أصيل</h3><p>خشب عود طبيعي من مصادر مختارة بعناية.</p></article>
+        <article class="feature"><span class="feature-icon" aria-hidden="true">⌖</span><h3>توصيل لجميع المناطق</h3><p>الشحن متاح إلى جميع أنحاء المملكة العربية السعودية.</p></article>
+        <article class="feature"><span class="feature-icon" aria-hidden="true">◇</span><h3>تغليف فاخر</h3><p>تقديم أنيق يليق بكم ومثالي للإهداء.</p></article>
+        <article class="feature"><span class="feature-icon" aria-hidden="true">✧</span><h3>جودة مميزة</h3><p>مختارات بعناية خصيصًا لعشاق العود.</p></article>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact" aria-labelledby="contact-title" dir="rtl">
+      <h2 class="section-title" id="contact-title">تواصلوا معنا</h2>
+      <div class="contact-details">
+        <p>الدمام، المملكة العربية السعودية</p>
+        <p>الهاتف: <a href="tel:+966591916656" dir="ltr">+966 59 191 6656</a></p>
+        <p>إنستغرام: <a href="https://instagram.com/Kynam_ksa" dir="ltr">@Kynam_ksa</a></p>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer" dir="rtl"><p>&copy; 2026 كنايم عود. جميع الحقوق محفوظة.</p></footer>
+</body>
+</html>
